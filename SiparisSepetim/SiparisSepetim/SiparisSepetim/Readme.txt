@@ -1,2 +1,0 @@
-Projenin eksikleri vardır.
-
