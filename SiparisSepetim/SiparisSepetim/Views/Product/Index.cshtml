@@ -1,0 +1,124 @@
+﻿@model SiparisSepetim.Models.ModelViewProducts
+
+@{
+    ViewData["Title"] = "Home Page";
+
+} 
+  <div class="container-fluid">
+            <div class="page-header">
+              <div class="row">
+                <div class="col-sm-6">
+                  <h3>Product</h3>
+
+                </div>
+                    @foreach (var item in Model.Categories)
+                   {
+                         <ul>
+                              <li><a class="nav-link menu-title link-nav"> <span>@item.categoryName</span></a></li>	
+                         </ul>
+                   }           
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid starts-->
+          <div class="container-fluid product-wrapper">
+            <div class="product-grid">
+              <div class="feature-products">
+                <div class="row m-b-10">
+                  <div class="col-md-3 col-sm-2 products-total">
+                    <div class="square-product-setting d-inline-block"><a class="icon-grid grid-layout-view" href="javascript:void(0)" data-original-title="" title=""><i data-feather="grid"></i></a></div>
+                    <div class="square-product-setting d-inline-block"><a class="icon-grid m-0 list-layout-view" href="javascript:void(0)" data-original-title="" title=""><i data-feather="list"></i></a></div>
+                    <div class="d-none-productlist filter-toggle">
+                      <h6 class="mb-0">Filters<span class="ms-2"><i class="toggle-data" data-feather="chevron-down"></i></span></h6>
+                    </div>
+                    <div class="grid-options d-inline-block">
+                      <ul>
+                        <li><a class="product-2-layout-view" href="javascript:void(0)" data-original-title="" title=""><span class="line-grid line-grid-1 bg-primary"></span><span class="line-grid line-grid-2 bg-primary"></span></a></li>
+                        <li><a class="product-3-layout-view" href="javascript:void(0)" data-original-title="" title=""><span class="line-grid line-grid-3 bg-primary"></span><span class="line-grid line-grid-4 bg-primary"></span><span class="line-grid line-grid-5 bg-primary"></span></a></li>
+                        <li><a class="product-4-layout-view" href="javascript:void(0)" data-original-title="" title=""><span class="line-grid line-grid-6 bg-primary"></span><span class="line-grid line-grid-7 bg-primary"></span><span class="line-grid line-grid-8 bg-primary"></span><span class="line-grid line-grid-9 bg-primary"></span></a></li>
+                        <li><a class="product-6-layout-view" href="javascript:void(0)" data-original-title="" title=""><span class="line-grid line-grid-10 bg-primary"></span><span class="line-grid line-grid-11 bg-primary"></span><span class="line-grid line-grid-12 bg-primary"></span><span class="line-grid line-grid-13 bg-primary"></span><span class="line-grid line-grid-14 bg-primary"></span><span class="line-grid line-grid-15 bg-primary"></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-9 col-sm-10 text-end"><span class="f-w-600 m-r-5"></span>
+                    <div class="select2-drpdwn-product select-options d-inline-block">
+                      <select class="form-control btn-square" name="select">
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">                            
+                  
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="product-wrapper-grid">
+                <div class="row">
+                   @{
+                       foreach (var product in Model.Product)
+                       {
+                           <div class="col-xl-3 col-sm-6 xl-4">
+                            <div class="card">
+                              <div class="product-box">
+                                <div class="product-img"><img class="img-fluid" src="/assets/images/ecommerce/01.jpg" alt="">
+                                  <div class="product-hover">
+                                    <ul>
+                                      <li><a asp-action="Index" asp-controller="Cart"><i class="icon-shopping-cart"></i></a></li>
+                                      <li><a data-bs-toggle="modal" data-bs-target="#exampleModalCenter16"><i class="icon-eye"></i></a></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="modal fade" id="exampleModalCenter16">
+                                  <div class="modal-dialog modal-lg modal-dialog-centered">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <div class="product-box row">
+                                          <div class="product-img col-lg-6"><img class="img-fluid" src="/assets/images/ecommerce/01.jpg" alt=""></div>
+                                          <div class="product-details col-lg-6 text-start"><a>
+                                              <h4>@product.productName - @product.category.categoryName</h4></a>
+                                            <div class="product-price">$@product.price
+                                              <del>$@(product.price * 3/10)</del>
+                                            </div>
+                                            <div class="product-view">
+                                              <h6 class="f-w-600">Product Details</h6>
+                                              <p class="mb-0">Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.</p>
+                                            </div>
+                 
+                                            </div>
+                                            <div class="product-qnty">
+                                              <h6 class="f-w-600">Quantity</h6>
+                                              <fieldset>
+                                                <div class="input-group">
+                                                  <input class="touchspin text-center" type="text" value="5">
+                                                </div>
+                                              </fieldset>
+                                              <form  asp-action="Index" asp-controller="Cart" method="post" class="addcart-btn">
+                                              <div ><a class="btn btn-primary me-3" >Add to Cart name="@product.productName"</a><a class="btn btn-primary">View Details</a></div>
+                                              </form>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="product-details"><a href="product-page.html">
+                                    <h4>@product.productName</h4></a>
+                                  <div class="product-price">$@product.price
+                                    <del>$@(product.price * 3/2)</del>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>                        
+                       }  
+                  }
+                  
+                </div>
+              </div>
+            
+          
+          <!-- Container-fluid Ends-->
+
+

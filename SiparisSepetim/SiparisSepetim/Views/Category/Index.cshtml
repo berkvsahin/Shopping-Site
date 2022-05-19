@@ -1,0 +1,49 @@
+﻿@model SiparisSepetim.Models.ModelViewCategories
+@*Model controllerden geliyor*@
+
+	
+}
+
+@foreach (var item in Model.Category)
+	{
+		<div class="theme-form login-form">
+		<div>
+				@if(@item.categoryName == "Moda")
+				{
+					<a class="theme-form login-form" href="forget-password.html">Moda Kategorisi</a>
+				}
+				@if(item.categoryName == "Elektronik")
+				{
+					<a class="theme-form login-form" href="forget-password.html">Elektronik Kategorisi</a>
+				}
+				@if(@item.categoryName == "Ev&Yaşam")
+				{
+					<a class="theme-form login-form" href="forget-password.html">Ev&Yaşam Kategorisi</a>
+				}
+				@if(item.categoryName == "Anne&Bebek")
+				{
+					<a class="theme-form login-form" href="forget-password.html">Anne&Bebek Kategorisi</a>
+				}
+				@if(@item.categoryName == "Kozmatik&Kişisel Bakım")
+				{
+					<a class="theme-form login-form" href="forget-password.html">Kozmatik&Kişisel Bakım Kategorisi</a>
+				}
+				@if(item.categoryName == "Mücevher&Saat")
+				{
+					<a class="theme-form login-form" href="forget-password.html">Mücevher&Saat Kategorisi</a>
+				}
+				@if(@item.categoryName == "Spor&Outdoor")
+				{
+					<a class="theme-form login-form" href="forget-password.html">Spor&Outdoor Kategorisi</a>
+				}
+				@if(item.categoryName == "Otomotiv&Motosiklet")
+				{
+					<a class="theme-form login-form" href="forget-password.html">Otomotiv&Motosiklet Kategorisi</a>
+				}
+				
+		</div>
+		</div>
+	}
+	
+
+				

@@ -1,0 +1,15 @@
+D:\Projeler\SiparisSepetim\SiparisSepetim\SiparisSepetim\OL\bin\Debug\net5.0\OL.deps.json
+D:\Projeler\SiparisSepetim\SiparisSepetim\SiparisSepetim\OL\bin\Debug\net5.0\OL.dll
+D:\Projeler\SiparisSepetim\SiparisSepetim\SiparisSepetim\OL\bin\Debug\net5.0\OL.pdb
+D:\Projeler\SiparisSepetim\SiparisSepetim\SiparisSepetim\OL\obj\Debug\net5.0\OL.csproj.AssemblyReference.cache
+D:\Projeler\SiparisSepetim\SiparisSepetim\SiparisSepetim\OL\obj\Debug\net5.0\OL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projeler\SiparisSepetim\SiparisSepetim\SiparisSepetim\OL\obj\Debug\net5.0\OL.AssemblyInfoInputs.cache
+D:\Projeler\SiparisSepetim\SiparisSepetim\SiparisSepetim\OL\obj\Debug\net5.0\OL.AssemblyInfo.cs
+D:\Projeler\SiparisSepetim\SiparisSepetim\SiparisSepetim\OL\obj\Debug\net5.0\OL.csproj.CoreCompileInputs.cache
+D:\Projeler\SiparisSepetim\SiparisSepetim\SiparisSepetim\OL\obj\Debug\net5.0\OL.dll
+D:\Projeler\SiparisSepetim\SiparisSepetim\SiparisSepetim\OL\obj\Debug\net5.0\refint\OL.dll
+D:\Projeler\SiparisSepetim\SiparisSepetim\SiparisSepetim\OL\obj\Debug\net5.0\OL.pdb
+D:\Projeler\SiparisSepetim\SiparisSepetim\SiparisSepetim\OL\obj\Debug\net5.0\ref\OL.dll
+D:\Projeler\SiparisSepetim\SiparisSepetim\SiparisSepetim\OL\bin\Debug\net5.0\DL.dll
+D:\Projeler\SiparisSepetim\SiparisSepetim\SiparisSepetim\OL\bin\Debug\net5.0\DL.pdb
+D:\Projeler\SiparisSepetim\SiparisSepetim\SiparisSepetim\OL\obj\Debug\net5.0\OL.csproj.CopyComplete
